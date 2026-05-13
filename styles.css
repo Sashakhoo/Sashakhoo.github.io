@@ -342,9 +342,53 @@ nav .container {
 /* About Section */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    grid-template-columns: 280px 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* About Photo */
+.about-grid {
+    grid-template-columns: 280px 1fr 1fr;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-photo-wrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--accent-color), #667eea);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--primary-color);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .about-photo {
+        justify-content: center;
+    }
+    .profile-photo-wrapper {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 /* Timeline Section */
