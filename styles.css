@@ -342,20 +342,17 @@ nav .container {
 /* About Section */
 .about-grid {
     display: grid;
-    grid-template-columns: 280px 1fr 1fr;
-    gap: 50px;
-    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
 }
 
 /* About Photo */
-.about-grid {
-    grid-template-columns: 280px 1fr 1fr;
-}
-
 .about-photo {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .profile-photo-wrapper {
